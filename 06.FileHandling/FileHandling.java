@@ -20,7 +20,7 @@ public class FileHandling {
         File file1 = new File(args[0]);
         Scanner sc = new Scanner(file1);
         while(sc.hasNextLine()) {
-            content = sc.nextLine();
+            content = content + sc.nextLine() + "\n";
         }
 
         System.out.println(content);
