@@ -23,7 +23,6 @@ public class FileHandling {
             content = content + sc.nextLine() + "\n";
         }
 
-        System.out.println(content);
         FileWriter file2 = new FileWriter(args[1]);
         file2.write(content);
         file2.close();
