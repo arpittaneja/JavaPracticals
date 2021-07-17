@@ -1,8 +1,8 @@
 /* Write	 a	 program	 to	 create	 a	 frame using Swing.	 Implement	 mouseClicked(),	
-mouseEntered()	and	mouseExited()	events such	that:
-a) Size	of	the	frame	should	be	tripled	when	mouse	enters it.
-b) Frame	should	reduce	to	its	original	size	when	mouse	is	clicked	in	it.
-c) Close	the	frame	when	mouse	exits it.*/
+mouseEntered()	and mouseExited() events such	that:
+a) Size of	the frame should be	tripled	when	mouse	enters it.
+b) Frame	should reduce	to	its original	size	when mouse	is	clicked	in	it.
+c) Close	the frame	when	mouse	exits it.*/
 
 
 
