@@ -1,5 +1,7 @@
 /*Using Swing, write a program to display a string in a frame window with pink color as background.*/
 
+
+
 import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
@@ -26,6 +28,8 @@ class Display extends JFrame
        f.setVisible(true);
        f.setSize(300,200);f.setDefaultOperation(EXIT_ON_CLOSE);
        f.setLayout(new FlowLayout());
+
+
    }
 }
 
