@@ -7,14 +7,12 @@ import java.awt.event.*;
 import java.awt.*;
 
 public class Frame_Pink {
-   public static void main(String[] args)
-   {
+   public static void main(String[] args){
        new Display();
    }
 
 }
-class Display extends JFrame
-{
+class Display extends JFrame{
    JFrame f;
    JLabel l;
    public Display()
@@ -28,8 +26,6 @@ class Display extends JFrame
        f.setVisible(true);
        f.setSize(300,200);f.setDefaultOperation(EXIT_ON_CLOSE);
        f.setLayout(new FlowLayout());
-
-
    }
 }
 
