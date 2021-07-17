@@ -44,24 +44,24 @@ public class Main extends WindowAdapter implements ActionListener{
 
 
 //Info Class
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class Info extends WindowAdapter implements ActionListener{
-    JFrame frame1;
-    JLabel lName, lCourse, lRollNo, lClg;
-    JButton button;
+public class Info extends WindowAdapter implements ActionListener
+{
+    Frame frame1;
+    Label lName, lCourse, lRollNo, lClg;
+    Button button;
     Info(String name, String course, String rollno, String clg){
-        frame1 = new JFrame("INFORMATION");
-        lName = new JLabel();
+        frame1 = new Frame("INFORMATION");
+        lName = new Label();
         lName.setBounds(50,50,250,30);
-        lCourse = new JLabel();
+        lCourse = new Label();
         lCourse.setBounds(50,90,250,30);
-        lRollNo = new JLabel();
+        lRollNo = new Label();
         lRollNo.setBounds(50,130,250,30);
-        lClg = new JLabel();
+        lClg = new Label();
         lClg.setBounds(50,170,250,30);
-        button = new JButton("CLOSE");
+        button = new Button("CLOSE");
         button.setBounds(175,220,125,30);
         button.addActionListener(this);
         lName.setText("Name: "+name);
@@ -77,51 +77,53 @@ public class Info extends WindowAdapter implements ActionListener{
         frame1.add(lRollNo);
         frame1.add(lClg);
         frame1.add(button);
-        frame1.getContentPane().setBackground(Color.green);
+        frame1.setBackground(Color.green);
         frame1.addWindowListener(this);
         frame1.setSize(350,300);
         frame1.setLayout(null);
         frame1.setVisible(true);
-        frame1.setDefaultCloseOperation(frame1.EXIT_ON_CLOSE);
     }
-
     public void actionPerformed(ActionEvent e){
         frame1.dispose();
     }
-
+    public void windowClosing(WindowEvent e){
+        frame1.dispose();
+    }
 }
 
 
 
+
+
 //CGPA class
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-public class CGPA extends JFrame implements ActionListener{
-    JFrame frame2;
-    JLabel label;
-    JTextField tf;
-    JButton button;
+public class CGPA extends WindowAdapter implements ActionListener{
+    Frame frame2;
+    Label label;TextField tf;
+    Button button;
     CGPA(String cgpa){
-        frame2 = new JFrame("CGPA");
-        label = new JLabel("CGPA: ");
+        frame2 = new Frame("CGPA");
+        label = new Label("CGPA: ");
         label.setBounds(50,50,50,30);
-        tf = new JTextField(cgpa);
+        tf = new TextField(cgpa);
         tf.setBounds(110,50,150,30);
-        button = new JButton("CLOSE");
+        button = new Button("CLOSE");
         button.setBounds(170,110,90,30);
         button.addActionListener(this);
         frame2.add(label);
         frame2.add(tf);
         frame2.add(button);
-        frame2.getContentPane().setBackground(Color.orange);
+        frame2.setBackground(Color.orange);
+        frame2.addWindowListener(this);
         frame2.setSize(310,190);
         frame2.setLayout(null);
         frame2.setVisible(true);
-        frame2.setDefaultCloseOperation(frame2.EXIT_ON_CLOSE);
     }
-
     public void actionPerformed(ActionEvent e){
+        frame2.dispose();
+    }
+    public void windowClosing(WindowEvent e){
         frame2.dispose();
     }
 }
