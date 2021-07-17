@@ -1,3 +1,13 @@
-![image](https://user-images.githubusercontent.com/75125324/125933358-e4fd875d-94b7-4bb2-a395-6599e0281692.png)
-![image](https://user-images.githubusercontent.com/75125324/125933364-6b866128-4904-4407-84e8-ac857b6680a8.png)
-![image](https://user-images.githubusercontent.com/75125324/125933371-56d5704b-4784-4f76-bfed-934ec0b1bda8.png)
+Initially: 
+
+![image](https://user-images.githubusercontent.com/75125324/126031865-25a1d811-bba1-42ee-8013-2a462ea1e483.png)
+
+
+
+
+After mouse enters, the size of the frame becomes triple it's original size:
+
+![image](https://user-images.githubusercontent.com/75125324/126031934-3b1875e1-8728-4516-a8a5-07f61b0f6882.png)
+
+
+
