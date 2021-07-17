@@ -1,6 +1,7 @@
 /*Using Swing, write a program to create two buttons named “Red” and “Blue”. When a button is pressed the background color should be set to the color named by the button’s label.*/
 
 
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -31,3 +32,4 @@ public class BgColor extends JFrame implements ActionListener{
            frame.getContentPane().setBackground(Color.blue);
        }
    }
+
