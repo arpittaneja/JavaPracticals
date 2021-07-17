@@ -1,45 +1,45 @@
-/*Using Swing, write a program to create two buttons labelled ‘A’ and ‘B’. When button ‘A’ is pressed, it displays your personal information (Name, Course, Roll No, College) and when button ‘B’ is pressed, it displays your CGPA in the previous semester.*/
+/*Using Swing, write a program to create two buttons labelled ‘A’ and ‘B’. When button ‘A’ is pressed, it displays your personal information (Name, Course, Roll No, College) 
+and when button ‘B’ is pressed, it displays your CGPA in the previous semester.*/
 
 
 
 //Main class
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 public class Main extends WindowAdapter implements ActionListener{
- Frame frame;
- Button button1, button2;
- Main(){
-     frame = new Frame("MY FRAME");
-     button1 = new Button("A");
-     button2 = new Button("B");
-     button1.setBounds(120,100,150,50);
-     button2.setBounds(120,200,150,50);
-     button1.addActionListener(this);
-     button2.addActionListener(this);
-     frame.addWindowListener(this);
-     frame.add(button1);
-     frame.add(button2);
-     frame.setBackground(Color.gray);
-     frame.setSize(400,400);
-     frame.setLayout(null);
-     frame.setVisible(true);
- }
- public void windowClosing(WindowEvent e){
-     frame.dispose();
- }
- public static void main(String args[]){
-     new Main();
- }
- public void actionPerformed(ActionEvent e){
-  if(e.getSource()==button1){
-      new Info("Arpit Taneja", "BSc (Hons)Computer Science", 
-             "88012","ARSD");
-      } 
-  if(e.getSource()==button2){
-       new CGPA("9.4");
-  }
- }
-}
+   JFrame frame;
+   JButton button1, button2;
+   Main(){
+       frame = new JFrame("MY FRAME");
+       button1 = new JButton("A");
+       button2 = new JButton("B");
+       button1.setBounds(120,100,150,50);
+       button2.setBounds(120,200,150,50);
+       button1.addActionListener(this);
+       button2.addActionListener(this);
+       frame.add(button1);
+       frame.add(button2);
+       frame.getContentPane().setBackground(Color.yellow);
+       frame.setSize(400,400);
+       frame.setLayout(null);
+       frame.setVisible(true);
+       frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+   }
+   public void windowClosing(WindowEvent e){
+       frame.dispose();
+   }
+   public static void main(String args[]){
+       new Main();
+   }
+   public void actionPerformed(ActionEvent e){
+       if(e.getSource()==button1){
+           new Info("Prachi Rawat", "BSc (Hons)Computer Science","88011","ARSD");}
+           if(e.getSource()==button2){
+               new CGPA("9.3");
+           }
+       }
+   }
 
 
 
